@@ -1,10 +1,15 @@
-<?php
-$names = array('Brad', 'Faisal', 'Tushar', 'Bithi');
+<?php get_header(); 
 
-$count=0;
+while(have_posts()){
+    the_post(); ?>
 
-while($count <count ($names)){
-    echo "<li>Hi, My Name Is $names[$count]</li>";
-    $count++;
-}
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <p><?php the_content() ?></p>
+    <hr>
+
+<?php }
+
+get_footer();
 ?>
+
+

@@ -3,3 +3,8 @@ Theme Name: Fictional University;
 Version: 1.0;
 Author: Faisal;
 */
+
+body {
+    color: orange;
+    background-color: blue
+}
